@@ -17,3 +17,42 @@
 }
 
 /* general */
+.primary-color-1 {
+    color: var(--color-primary-color-1);
+}
+
+.primary-color-2 {
+    color: var(--color-primary-color-2);
+}
+
+/* footer */
+footer {
+    display: flex;
+}
+
+.float-item-button {
+    display: flex;
+    gap: 15px;
+}
+
+.select-item-button {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.item-button {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    gap: 5px;
+}
+
+.item-button>i {
+    font-size: 32px;
+}
+
+.select-item-button>i {
+    font-size: 12px;
+    -webkit-text-stroke: 1px;
+}
