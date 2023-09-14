@@ -16,7 +16,7 @@
 	--color-neutral-dark: #4a4a4a;
 	--color-neutral-darker: #222222;
 	--color-neutral-black: #000000;
-	--color-neutral-dark-transparent: #4a4a4a90;
+	--color-neutral-dark-transparent: #33333390;
 }
 
 /* general */
@@ -52,25 +52,32 @@ main {
     justify-content: center;
     align-content: center;
     height: calc(100vh - 70px - 40px);
-    padding: 30px 50px 20px;
+    padding: 30px 100px 20px;
 }
 
 .user-container {
     padding: 7px 3px;
-    width: calc((100vw - 100px) / 7);
+    width: calc((100vw - 200px) / 7);
     height: calc(100% / 5);
-    border: solid 1px;
 }
 
 .img-container {
     background-color: red;
     height: 100%;
+    position: relative;
 }
 
 .img-container>img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.user-name {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--color-neutral-dark-transparent);
+    padding: 5px;
 }
 
 
