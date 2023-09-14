@@ -1,8 +1,9 @@
 * {
+    font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: 4;
-    border: solid 1px black;
+    /* border: solid 1px black; */
 }
 
 /* palette */
@@ -25,9 +26,18 @@
     color: var(--color-primary-color-2);
 }
 
+.color-white {
+    color: var(--color-neutral-white);
+}
+
 /* footer */
 footer {
+    height: 70px;
+    background-color: var(--color-neutral-darker);
+    color: var(--color-neutral-white);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .float-item-button {
@@ -55,4 +65,13 @@ footer {
 .select-item-button>i {
     font-size: 12px;
     -webkit-text-stroke: 1px;
+}
+
+.end-meeting {
+    background-color: var(--color-neutral-dark);
+    color: var(--color-primary-color-2);
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    padding: 0 15px;
 }
