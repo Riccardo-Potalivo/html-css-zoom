@@ -4,7 +4,7 @@
     font-size: small;
     margin: 0;
     padding: 0;
-    box-sizing: 4;
+    box-sizing: border-box;
     /* border: solid 1px black; */
 }
 
@@ -44,6 +44,35 @@ header>div {
     border-radius: 5px;
 }
 
+/* main */
+main {
+    background-color: var(--color-neutral-black);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: calc(100vh - 70px - 40px);
+    padding: 30px 50px 20px;
+}
+
+.user-container {
+    padding: 7px 3px;
+    width: calc((100vw - 100px) / 7);
+    height: calc(100% / 5);
+    border: solid 1px;
+}
+
+.img-container {
+    background-color: red;
+    height: 100%;
+}
+
+.img-container>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 /* footer */
 footer {
@@ -52,6 +81,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 15px;
 }
 
 .float-item-button {
@@ -73,7 +103,7 @@ footer {
 }
 
 .item-button>i {
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .select-item-button>i {
