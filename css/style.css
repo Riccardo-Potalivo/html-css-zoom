@@ -62,7 +62,6 @@ main {
 }
 
 .img-container {
-    background-color: red;
     height: 100%;
     position: relative;
 }
@@ -71,11 +70,14 @@ main {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .user-name {
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
+    left: 5px;
+    border-radius: 3px;
     background-color: var(--color-neutral-dark-transparent);
     padding: 5px;
 }
@@ -125,3 +127,52 @@ footer {
     align-items: center;
     padding: 0 15px;
 }
+
+/* bonus */
+
+/* microphone */
+#microphone {
+  display: none;
+}
+
+#microphone + label:before {
+  content: "\f130"; 
+  font-size: 25px; 
+}
+
+#microphone:checked + label:before {
+  content: "\f131";
+  font-size: 25px; 
+}
+
+#microphone ~ span:before {
+  content: "Mic on"; 
+}
+
+#microphone:checked ~ span:before {
+  content: "Mic off";
+}
+
+/* video */
+#video {
+    display: none;
+  }
+  
+  #video + label:before {
+    content: "\f03d"; 
+    font-size: 25px; 
+  }
+  
+  #video:checked + label:before {
+    content: "\f4e2";
+    font-size: 25px; 
+  }
+  
+  #video ~ span:before {
+    content: "video on"; 
+  }
+  
+  #video:checked ~ span:before {
+    content: "video off";
+  }
+  

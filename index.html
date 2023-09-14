@@ -385,18 +385,29 @@
     <!-- footer -->
     <footer>
         <!-- video settings -->
-        <div class="float-item-button">
-            <div class="select-item-button">
+        <div class="float-item-button user-settings">
+            <!-- <div class="select-item-button">
                 <div class="item-button">
                     <i class="fa-solid fa-microphone "></i>
                     <span>Mute</span>
                 </div>
                 <i class="fa-solid fa-chevron-up"></i>
+            </div> -->
+
+            <!-- bonus -->
+            <div class="select-item-button">
+                <div class="item-button">
+                    <input type="checkbox" id="microphone">
+                    <label for="microphone" class="fas"></label>
+                    <span></span>
+                </div>
+                <i class="fa-solid fa-chevron-up"></i>
             </div>
             <div class="select-item-button">
                 <div class="item-button">
-                    <i class="fa-solid fa-video"></i>
-                    <span>Stop Video</span>
+                    <input type="checkbox" id="video">
+                    <label for="video" class="fas"></label>
+                    <span></span>                
                 </div>
                 <i class="fa-solid fa-chevron-up"></i>
             </div>
@@ -404,7 +415,7 @@
         </div>
 
         <!-- meeting settings -->
-        <div class="float-item-button">
+        <div class="float-item-button meeting-settings">
             <div class="item-button">
                 <i class="fa-solid fa-user-plus"></i>
                 <span>Invite</span>
@@ -443,7 +454,9 @@
 
         <!-- end meeting -->
         <div class="end-meeting">
-            <p class=" primary-color-2">End meeting</p>
+            <div>
+                <p class=" primary-color-2">End meeting</p>
+            </div>
         </div>
     </footer>
 
