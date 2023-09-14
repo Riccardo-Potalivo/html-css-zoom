@@ -1,5 +1,7 @@
 * {
     font-family: 'Noto Sans', sans-serif;
+    color: var(--color-neutral-white);
+    font-size: small;
     margin: 0;
     padding: 0;
     box-sizing: 4;
@@ -14,7 +16,7 @@
 	--color-neutral-dark: #4a4a4a;
 	--color-neutral-darker: #222222;
 	--color-neutral-black: #000000;
-	--color-neutral-dark-transparent: 74, 74, 74;
+	--color-neutral-dark-transparent: #4a4a4a90;
 }
 
 /* general */
@@ -26,15 +28,27 @@
     color: var(--color-primary-color-2);
 }
 
-.color-white {
-    color: var(--color-neutral-white);
+/* header */
+header {
+    height: 40px;
+    background-color: var(--color-neutral-black);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
+
+header>div {
+    background-color: var(--color-neutral-dark);
+    padding: 3px 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
 
 /* footer */
 footer {
     height: 70px;
     background-color: var(--color-neutral-darker);
-    color: var(--color-neutral-white);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,17 +73,16 @@ footer {
 }
 
 .item-button>i {
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .select-item-button>i {
-    font-size: 12px;
+    font-size: 10px;
     -webkit-text-stroke: 1px;
 }
 
 .end-meeting {
     background-color: var(--color-neutral-dark);
-    color: var(--color-primary-color-2);
     display: flex;
     align-self: stretch;
     align-items: center;
