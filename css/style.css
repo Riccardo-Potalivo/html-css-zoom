@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 4;
+    border: solid 1px black;
+}
+
+/* palette */
+:root {
+	--color-primary-color-1: #4bc800;
+	--color-primary-color-2: #f50018;
+	--color-neutral-white: #ffffff;
+	--color-neutral-dark: #4a4a4a;
+	--color-neutral-darker: #222222;
+	--color-neutral-black: #000000;
+	--color-neutral-dark-transparent: 74, 74, 74;
+}
